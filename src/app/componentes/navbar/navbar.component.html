@@ -1,0 +1,55 @@
+<div class="navbar navbar-expand-lg bg-dark" style="color: white;">
+   <h2><img [src] = imagen ></h2>
+   <h1>WARS ROBOTS </h1>
+   <div class="container">
+      © 2019 Juan David Saboga Burgos
+  </div>
+   <div class="ml-auto">
+
+   </div>
+
+</div>
+
+<div class="container">
+<table>
+    <th>
+<div class="card" style="width: 20rem;">
+    <img [src]="imagen2" class="image" >
+    <div class="card-body">
+      <h5 class="card-title">Cossack</h5>
+      <p *ngIf= "estado1" class="card-text">
+          El Cosasck,fue creado por el imperio  Ruso para defenderse de los paises enemigos.
+          Este pequeño pero potente robot de combate trae en si 2 cañones de gran poder sobre su parde izquierda, 
+          La sorpresa de estos robot es su imprecionante capacidad de saltar a grandes alturas de 20 Metros. 
+      </p>
+      <button  (click)="cambiarEstado1()" class="btn btn-primary">ver más</button>   
+    </div>    
+  </div>
+</th>
+<th>
+  <div class="card" style="width: 20rem;">
+    <img [src]="imagen3" class="image" >
+    <div class="card-body">
+      <h5 class="card-title">Gepard Looked</h5>
+      <p *ngIf="estado2" class="card-text">Creado por U.S.A este robot de combate es uno de los mas producidos ya que su potencia y velocidad lo
+          hace uno de los robots de combate favoritos por este pais. Descripcion traen 2 nimigud en sus dos lados y la parte superior
+          cochetes que son muy efetivos.  <i class="fa fa-hacker-news" aria-hidden="true"></i></p>
+      <button (click)="cambiarEstado2()" class="btn btn-primary">ver más</button>      
+    </div>    
+  </div>
+</th> 
+<th>
+  <div class="card" style="width: 20rem;">
+        <img [src]="imagen4" class="image" >
+        <div class="card-body">
+          <h5 class="card-title">Raijin</h5>
+          <p *ngIf="estado3" class="card-text">Los Raijin son robots de combate con 4 extremidad y dos potentes cañones en sus dos lados, estos puden ser equipados con misiles,cañones, y cañones lacer.Tienen una 
+              recistencia por su coraza y su escudo para defenderse.
+          </p>
+          <button (click)="cambiarEstado3()"  class="btn btn-primary">ver más</button>      
+        </div>    
+      </div>
+</th>    
+</table>
+</div>
+

@@ -1,0 +1,16 @@
+<div class="navbar navbar-expand-lg bg-dark" style="color: white;">
+   
+    <h1>Tipo de Equipamientos </h1>
+    <div class="ml-auto">        
+    </div>
+ </div>
+ <div  class="card-deck">
+ <div *ngFor="let item of imagenes" class="card mb-4" style="width: 18rem;">
+        <img [src]=item.url class="card-img-top" >
+      
+      
+        <div class="card-body">
+          <p class="card-text">{{item.descripcion}}</p>
+        </div>
+      </div>
+    </div>     
